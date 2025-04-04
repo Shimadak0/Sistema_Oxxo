@@ -12,7 +12,7 @@ public class Personal {
     private boolean estaActivo;
     private int horasActivo;
 
-    public Personal(int numeroDeEmpleado, String nombre, String apellido){
+    public Personal(int numeroDeEmpleado, String nombre, String apellido, boolean estaActivo){
         this.numeroDeEmpleado = (int)(Math.random()*9999);
         this.nombre = nombre;
         this.apellido = apellido;

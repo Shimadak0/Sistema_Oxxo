@@ -2,8 +2,8 @@ package com.tecnm.itics.proyecto.oxxo;
 
 public class Proveedores extends Personal{
 
-    public Proveedores(int numeroDeEmpleado, String nombre, String apellido, char password){
-        super(numeroDeEmpleado, nombre, apellido, password);
+    public Proveedores(int numeroDeEmpleado, String nombre, String apellido, boolean estaActivo){
+        super(numeroDeEmpleado, nombre, apellido, estaActivo);
     }
     private int numeroProveedor;
     private int numeroProductosProveedor;

@@ -1,16 +1,24 @@
 package com.tecnm.itics.proyecto.oxxo;
 
-public class Cajero extends Personal {
+import java.util.Scanner;
 
-    public Cajero(int numeroDeEmpleado, String nombre, String apellido, char password) {
-        super(numeroDeEmpleado, nombre, apellido, password);
+public class Cajero extends UsuariosContraseñas {
+
+    public Cajero(int numeroDeEmpleado, String nombre, String apellido, boolean estaActivo, int usuario, int password) {
+        super(numeroDeEmpleado, nombre, apellido, estaActivo, usuario, password);
+
     }
 
-    public boolean verificarEmpleado(){
+    public boolean verificarEmpleado(boolean estaEnCaja) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escriba su usuario");
+        int tempUser = sc.nextInt();
+        System.out.println("Escriba su contraseña");
+        int tempPass = sc.nextInt();
 
-    }
-
-    public void estaEnCaja(boolean estaEnCaja){
-
+        if (tempUser == usuario && tempPass == password) {
+            estaEnCaja = true;
+        }
+        return estaEnCaja;
     }
 }

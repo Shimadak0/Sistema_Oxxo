@@ -1,8 +1,11 @@
 package com.tecnm.itics.proyecto.oxxo;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Personal {
+public class Personal implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private int numeroDeEmpleado;
     private String nombre;
     private String apellido;
@@ -24,5 +27,7 @@ public class Personal {
         System.out.println("El nombre y apellio del empleado es: " + nombre + " " + apellido);
         System.out.println("Es un empleado " + estaActivo);
     }
+
+
 
 }

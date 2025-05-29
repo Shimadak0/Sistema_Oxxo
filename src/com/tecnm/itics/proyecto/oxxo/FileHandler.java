@@ -1,4 +1,4 @@
-package com.tecnm.morelia.itics.poo.u6.files.bags;
+package com.tecnm.itics.proyecto.oxxo;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
